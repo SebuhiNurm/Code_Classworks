@@ -1,0 +1,22 @@
+/* .book{
+    background-color: red;
+}
+#pen{
+    background-color: green;
+}
+
+.items p{
+    color: yellow;
+} */
+
+/* div#animal span{
+    color: pink; 
+} */
+
+/* span.animal{
+    color: blue;
+} */
+
+.items div .parag{
+    background-color: green;
+}

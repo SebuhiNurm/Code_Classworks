@@ -1,0 +1,13 @@
+/* li:empty{
+    background-color: black;
+}
+li:not(:nth-of-type(4)){
+    background-color: green;
+} */
+/* li:not([class="select"]){
+    background-color: brown;
+} */
+/* [value="hello"]{
+background-color: black;
+} */
+[value]

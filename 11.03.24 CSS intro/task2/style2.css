@@ -1,0 +1,15 @@
+/* .items div+span{
+    background-color: red;
+} */
+
+
+/* .items div~span{
+    background-color: pink;
+} */
+ .items div>p{
+    background-color: green;
+ }
+
+ nav ul li:first-child{
+    background-color: beige;
+ }
