@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-position: center; 
+    
+}
+
+.box>span>h1{
+    font-size: 100px;    
+    color: beige;
+}
+
+#big{
+    background-image: url("./image/big.jpeg");
+    background-attachment: fixed;
+}
+
+#folder{
+    background-image: url("./image/folder-img.jpeg");
+}
+
+#small{
+    background-image: url("./image/big.jpeg");  
+    background-attachment: fixed;
+}
+
+#gradient{
+    background-image: url("./image/folder-img.jpeg");
+}

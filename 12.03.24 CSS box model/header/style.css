@@ -1,0 +1,9 @@
+*{
+    list-style-type: none;
+}
+nav{
+    justify-content: space-between;
+}
+ul{
+    column-gap: 2rem;
+}

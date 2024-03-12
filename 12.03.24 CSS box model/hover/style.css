@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    height: 200px;
+    background-color: bisque;
+    border: 3px solid orange;
+    margin: 10px;
+}
+.child{
+    height: 100px;
+    background-color: white;
+    border: 3px solid blue;
+}
+.parent:hover{
+    background-color: pink;
+    border: 5px solid red;
+}
+.parent.box .child:hover{
+    background-color: yellow;
+    border: 5px solid white;
+    color: aliceblue;
+}
+.parent:hover .child{
+    background-color: blue;
+    border: 5px solid white;
+    color: aliceblue;
+}
