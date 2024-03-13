@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header .container .header ul li {
+  display: inline-block;
+}
+.header .logo a {
+  color: black;
+  text-decoration: none;
+}
+.header .logo a:hover {
+  color: red;
+}
+.header nav a:hover {
+  color: red;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+}
+#banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner {
+  text-align: center;
+  padding-top: 200px;
+}
+.banner h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 0px;
+}
+.banner h1::after {
+  display: block;
+  content: " ";
+  width: 50px;
+  height: 2px;
+  background-color: #f4623a;
+  margin: 20px auto;
+}
+.extra-info h1::after {
+  display: block;
+  content: " ";
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 20px auto;
+}
+#extra-info {
+  padding: 150px;
+  background-color: rgb(223, 105, 42);
+}
+.extra-info h1 {
+  color: white;
+}
+.extra-info p {
+  color: white;
+}
+.extra-info a {
+  padding: 20px;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 32px;
+}
+.extra-info a:hover {
+  background-color: silver;
+}
+.extra-info p {
+  padding: 30px 0;
+}
+
+.banner p {
+  font-size: 25px;
+  color: white;
+  margin: 50px 0;
+}
+.banner a {
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  border-radius: 160px;
+  padding: 20px 36px;
+}
+.extra-info {
+  text-align: center;
+}
+.services h1::after {
+  display: block;
+  content: " ";
+  width: 50px;
+  height: 2px;
+  background-color: #f4623a;
+  margin: 20px auto;
+}
+#services {
+  padding: 2rem 0;
+}
+#services h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+.services .cards {
+  display: flex;
+  gap: 2rem;
+}
+.cards .card {
+  border: 1px solid;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.cards .card h2 {
+  margin: 20px;
+}
+.services h1::after {
+  display: block;
+  content: " ";
+  width: 50px;
+  height: 2px;
+  background-color: #f4623a;
+  margin: 20px auto;
+}
+i {
+  color: red;
+  font-size: 30px;
+}
+
+footer {
+  background-color: silver;
+}
+.footer {
+  padding: 30px;
+  text-align: center;
+}
