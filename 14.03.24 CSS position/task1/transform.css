@@ -1,0 +1,57 @@
+.boxes{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+h1, p{
+    color: black;
+    text-align: center;
+}
+.box:nth-child(1){
+    background-color: red;
+}
+.box:nth-child(2){
+    background-color: green;
+}
+.box:nth-child(3){
+    background-color: blue;
+}
+.box:nth-child(4){
+    background-color: orange;
+}
+p{
+    display: none;
+}
+.box:hover p{
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+.box:hover h1{
+    display: none;
+}
+.red:hover{
+    transform: scale(1.2);
+}
+.green:hover{
+    transform: translate(264px, -210px);
+}
+.blue:hover{
+    transform: rotateY(360deg);
+}
+.yellow:hover{
+    transform: skewX(30deg);
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    padding: 20px 0;
+
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    color: white;
+}
+.header nav ul {
+    display: flex;
+    gap: 20px;
+
+}
+.header nav ul li{
+    list-style: none;
+}
+.header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.header i{
+    display: none;
+}
+@media screen and (max-width: 992px){
+    .header i{
+        display: block;
+        color: red;
+    }
+    .header nav ul li a{
+        display: none;
+    }
+}
+

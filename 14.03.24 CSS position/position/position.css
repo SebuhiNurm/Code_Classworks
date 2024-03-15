@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 200vh;
+}
+.boxes{
+    width: 40%;
+    height: 20%;
+    background-color: bisque;
+    position: relative;
+    top: 10%;
+    left: 30%;
+    border: 3px solid green;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-a{
+    position: absolute; 
+    left: 40px;
+    top: 40px;
+    background-color: red;
+    
+}
+.box-b{
+    position: absolute; 
+    left: 80px;
+    top: 80px;
+    background-color: yellow;
+
+}
+.box-c{
+    position: absolute; 
+    left: 60px;
+    top: 60px;
+    background-color: rgba(165, 99, 42, 0.265);
+}
+.box-d{
+    position: sticky;
+    left: 100%;
+    top: 0;
+    background-color: red;
+}
+.box-e{
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    background-color: green;
+}
+.box-f{
+    position: fixed;
+    right: 0;
+    top: 400px;
+    background-color: red;
+}
