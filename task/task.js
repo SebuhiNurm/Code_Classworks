@@ -167,3 +167,66 @@ function filterByBirthYear(array, age) {
   return res;
 }
 console.log(filterByBirthYear(users, 10));
+
+//-------------------------------------------------------------------
+
+const searchInput = document.querySelector("#search-input");
+const sortSelect = document.querySelector("#sort-select");
+const filterSelect = document.querySelector("#filterSelect");
+
+
+//search //function
+function searchTodo() {
+  const searchText = searchInput.value.toLowerCase();
+  const filteredTodos = todos.filter((item) =>
+    item.todoItem.toLowerCase().startsWith(searchText)
+  );
+  drawTable(filteredTodos);
+}
+searchInput.addEventListener("input", searchTodo);
+
+sortSelect.addEventListener("change", function () {
+  const selectedValue = sortSelect.value;
+  if (selectedValue === "date") {
+    sortByDate(); // Tarihe göre sırala
+  } else if (selectedValue === "name") {
+    sortByName(); // Ada göre sırala
+  }
+  drawTable(todos); // Tabloyu güncelle
+});
+
+function sortByDate() {
+  todos.sort((a, b) => new Date(a.date) - new Date(b.date));
+}
+
+function sortByName() {
+  todos.sort((a, b) => a.todoItem.localeCompare(b.todoItem));
+}
+
+function filterDone() {
+  const undoneTodos = todos.filter((todo) => !todo.completed);
+  drawTable(undoneTodos);
+}
+
+filterSelect.addEventListener("change", function () {
+  const selectedValue = filterSelect.value;
+  if (selectedValue === "undone") {
+    filterDone();
+  } else {
+    drawTable(todos);
+  }
+});
+
+
+// <div class="search-sort-filter">
+//                 <input type="text" id="search-input" placeholder="Search...">
+//                 <select id="sort-select">
+//                     <option disabled selected hidden value="">Sort</option>
+//                     <option value="date">Date</option>
+//                     <option value="name">Name</option>
+//                 </select>
+//                 <select id="filterSelect">
+//                     <option value="all">All</option>
+//                     <option value="undone">Undone</option>
+//                   </select>
+//             </div>
