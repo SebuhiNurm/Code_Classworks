@@ -75,14 +75,14 @@ const body = document.body;
 // wrapperDiv.append(studentList);
 // body.append(wrapperDiv);
 
-// const btn = document.createElement("button");
-// btn.textContent = "Change!";
-// btn.addEventListener("click", function () {
-//     let red = Math.floor(Math.random()*256)
-//     let green = Math.floor(Math.random()*256)
-//     let blue = Math.floor(Math.random()*256)
+const btn = document.createElement("button");
+btn.textContent = "Change!";
+btn.addEventListener("click", function () {
+    let red = Math.floor(Math.random()*256)
+    let green = Math.floor(Math.random()*256)
+    let blue = Math.floor(Math.random()*256)
     
-//     body.style.backgroundColor = `rgb(${red},${green},  ${blue})`
-// });
+    body.style.backgroundColor = `rgb(${red},${green},  ${blue})`
+});
 
-// body.append(btn);
+body.append(btn);
