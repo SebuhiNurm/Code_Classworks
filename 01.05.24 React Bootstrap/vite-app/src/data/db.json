@@ -1,0 +1,20 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "a title",
+      "posterUrl": "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      "genre": "horror",
+      "releaseYear": 1888,
+      "cost": []
+    },
+    {
+      "id": "2",
+      "title": "a title",
+      "posterUrl": "https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg",
+      "genre": "horror",
+      "releaseYear": 1888,
+      "cost": []
+    }
+  ]
+}
