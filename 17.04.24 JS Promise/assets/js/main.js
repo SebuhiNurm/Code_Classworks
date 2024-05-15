@@ -40,7 +40,8 @@ let suppliers = null;
 const searchInp = document.querySelector(".search");
 const tBody = document.querySelector(".tbody");
 const tHead = document.querySelector("thead");
-const loaders = document.querySelector(".loaders");
+const loaders = document.querySelector(".loaders"); 
+
 async function getData(endpoint) {
   try {
     loaders.classList.add("d-none");
@@ -53,7 +54,7 @@ async function getData(endpoint) {
   } finally {
     tHead.classList.remove("d-none");
   }
-  // return data
+  // return data 
 }
 console.log(getData("suppliers"));
 
@@ -75,6 +76,7 @@ function drawTable(array) {
 }
 
 searchInp.addEventListener("keyup", () => {
+  
 const searchText = searchInp.value.trim().toLowerCase()
   let filterData = [...suppliers];
   console.log(
@@ -85,6 +87,6 @@ const searchText = searchInp.value.trim().toLowerCase()
   drawTable(
     filterData.filter((a) =>
       a.companyName.toLowerCase().includes(searchText)
-    )
+    ) 
   );
 });
